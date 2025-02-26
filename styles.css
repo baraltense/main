@@ -1,0 +1,112 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Estilos de los enlaces */
+.link-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente fila */
+    gap: 30px;
+    justify-content: center; /* Centra las tarjetas */
+    margin: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.link-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: calc(33.333% - 20px); /* 3 elementos por fila */
+    transition: transform 0.3s ease;
+}
+
+.link-card:hover {
+    transform: scale(1.05);
+}
+
+.link-button {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #333;
+}
+
+.link-button:hover {
+    color: #007bff;
+}
+
+.link-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 1024px) {
+    .link-card {
+        width: calc(50% - 20px); /* 2 elementos por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .link-card {
+        width: 100%; /* 1 elemento por fila en pantallas pequeñas */
+    }
+}
